@@ -1,0 +1,1546 @@
+/* フォント設定 */
+@font-face {
+    font-family: 'KosugiMaru';
+    src: url('../font/Kosugi_Maru/KosugiMaru-Regular.ttf');
+}
+@font-face {
+    font-family: 'MPLUS1Code-Bold';
+    src: url('..font/M_PLUS_1_Code/static/MPLUS1Code-Bold.ttf');
+}
+
+/* ヘッダー用設定 */
+.errorResult{
+	font-family: 'KosugiMaru';
+	margin: 2vh 0 0 0;
+	color: crimson;
+}
+
+#topHeader{
+    font-family: 'KosugiMaru';
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 25px;
+}
+
+#topHeader p{
+    height: 34px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    margin: auto 0;
+}
+
+#bottomHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 auto;
+    background-color: #FFFFFF;
+    height: 100px;
+}
+
+#listHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+#listHeader li{
+    display: inline-block;
+}
+
+#listHeader li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    margin: 0 15px;
+}
+
+#listHeader li a:hover{
+    text-decoration: underline;
+}
+
+#formHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* 入力フォーム用設定 */
+.formText{
+    background-color: #FFFFFF;
+    color: #000000;
+    height: 40px;
+    width: 50vh;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    margin: 0;
+    margin-left: 10vh;
+    padding: 0 2vw;
+}
+
+.formText::before{
+    content: '';
+    background: 'url(../icn/search.png)';
+    width: 20px;
+    height: 20px;
+}
+
+.formSubmit{
+    font-family: 'KosugiMaru';
+    background-color: #fafaf5;
+    font-size: small;
+    letter-spacing: 0.01em;
+    height: 40px;
+    width: 13vh;
+    border: 1px solid #b9b9b9;
+    border-radius: 8px;
+    margin: 0 10vh 0 1vh;
+}
+
+.formSubmit:hover{
+    background-color: #f4f4f4;
+}
+
+/* 各種ボタン用設定 */
+#WriteRecipe{
+    font-family: 'KosugiMaru';
+    margin: auto 10px;
+    text-decoration: none;
+    color: #000000;
+    padding: 7px 10px;
+    background-color: #fafaf5;
+    border: 1px solid #b9b9b9;
+    border-radius: 8px;
+    height: 7vh;
+}
+
+#myRecipe{
+    margin: auto 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 7px 10px;
+    background-color: #f7931d;
+    border: 1px solid #b9b9b9;
+    border-radius: 8px;
+    height: 7vh;
+}
+
+.tag{
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    margin: auto 10px;
+}
+
+.taga{
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    margin: auto 10px;
+}
+
+.tag:hover{
+    text-decoration: underline;
+}
+
+/* メイン用設定 */
+main{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 3vh 5vw;
+}
+
+/* メインデータ(右) */
+#mainRight{
+    margin: 2vh 0;
+    border-radius: 8px;
+    width: 28vw;
+}
+
+#weekRecipe{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#weekRecipe p{
+	letter-spacing: 0.1em;
+}
+
+#weekRecipe div{
+    display: flex;
+    align-items: center;
+}
+
+#weekRecipe div a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#weekRecipe div a:hover{
+    text-decoration: underline;
+}
+
+#calender{
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0 2vh 1.5vw;
+}
+
+#calender tr{
+    padding: 1px ;
+}
+
+#calender td{
+    padding-right: 1vh;
+}
+
+#calenderData{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#calenderButton{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2vh 0.5wv 2vh 0;
+    flex-direction: column;
+}
+
+#calenderButton a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'KosugiMaru';
+    background-color: #fafaf5;
+    font-size: small;
+    letter-spacing: 0.01em;
+    padding: 0.5vh 1.5vw;
+    border: 1px solid #b9b9b9;
+    border-radius: 8px;
+}
+
+#calenderButton a:hover{
+    background-color: #f4f4f4;
+}
+
+#toDo{
+    padding: 1.5vh 4vw;
+}
+
+#toDo p{
+    font-family: 'KosugiMaru';
+    font-size: bold;
+    letter-spacing: 0.01em;
+    margin: 0;
+    margin-bottom: 1vh;
+}
+
+#toDo ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+#toDo ul li{
+    list-style-type: disc;
+    color: #292929dd;
+    margin: 2vh 0 1vh 3vw;
+}
+
+.mainRightData{
+    background-color: #FFFFFF;
+    border: 1px solid #b9b9b9;
+    border-radius: 8px;
+    margin-top: 2vh;
+}
+
+.mainRightData ul{
+    margin: 0;
+    padding: 0;
+}
+
+.mainRightData ul li{
+    display: flex;
+    list-style: none;
+    margin: 2vh 0;
+    margin-left: 8%;
+}
+
+.mainRightData ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+}
+
+.mainRightData ul li p{
+	margin: auto;
+    color: #000000;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+}
+
+.mainRightData ul li a:hover{
+    text-decoration: underline;
+}
+
+.mainRightData ul li img{
+    padding: 0 1vh;
+}
+
+.mainRightData ul li img:hover{
+    padding: 0 0 0 2vh;
+}
+
+.scrollEvent{
+    position: fixed;
+    top: 10px;
+    right: 5vw;
+}
+
+/* メインデータ(左) */
+.mainLeft{
+
+    width: 60vw;
+}
+
+.mainLeftContent{
+	width: 100%;
+    margin: 2vh 0;
+    border: 1px solid #b9b9b9;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+#selection{
+    width: 25%;
+}
+
+#selection h5{
+    font-family: 'KosugiMaru';
+    font-weight: 5rem;
+    font-size: bold;
+    letter-spacing: 0.01em;
+    margin: 2vh 2vw;
+}
+
+#selection ul{
+    text-align: justify;
+    list-style: none;
+    margin: 0.5vh 0 0.5vh 3vw;
+    padding: 0;
+}
+
+#selection ul li{
+    margin: 0.5vh 0;
+}
+
+#selection ul li a{
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+#selection ul li img{
+    margin: 0 0.5vw 0 0.5vw;
+}
+
+#selection ul li img:hover{
+    margin: 0 0 0 1vw;
+}
+
+#selection ul li a:hover{
+    text-decoration: underline;
+}
+
+#PickUpRecipes{
+    text-align: center;
+    width: 75%;
+}
+
+.bigCookPhoto{
+    position: relative;
+    display: block;
+    margin: 2vh auto;
+    width: 95%;
+    height: 40vh;
+}
+
+.bigCookPhoto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.bigCookPhoto h5{
+    position: absolute;
+    background-color: #f7931d;
+    border-radius: 8px;
+    padding: 0.5vh 1vw;
+    margin: 1vh 1vw;
+    bottom: 8vh;
+}
+
+.bigCookPhoto h5 a{
+    text-decoration: none;
+    font-family: 'KosugiMaru';
+    font-size: bold;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.bigCookPhoto h5 a:hover{
+    text-decoration: underline;
+}
+
+.bigCookPhoto p{
+    position: absolute;
+    font-family: 'KosugiMaru';
+    font-size: bold;
+    color: #FFFFFF;
+    letter-spacing: 0.01em;
+    margin: 0.5vh 1vw 1vh 1vw;
+    bottom: 0vh;
+}
+
+#mainDish{
+    display: flex;
+    background-color: #f7931d;
+    border-radius: 8px;
+    padding: 0.5vh 1vw;
+    margin: 1vh 1vw;
+    width: 18%;
+    justify-content: center;
+    text-align: center;
+    bottom: 8vh;
+    color: #FFFFFF;
+}
+
+#mainDish a{
+    text-decoration: none;
+    font-family: 'KosugiMaru';
+    font-size: bold;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+#sideDish{
+    background-color: #9eb606;
+    border-radius: 8px;
+    padding: 0.5vh 1vw;
+    margin: 1vh 1vw;
+    width: 15%;
+    justify-content: center;
+    text-align: center;
+    bottom: 8vh;
+}
+
+#sideDish a{
+    text-decoration: none;
+    font-family: 'KosugiMaru';
+    font-size: bold;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+#soup{
+    background-color: #f7931d;
+    border-radius: 8px;
+    padding: 0.5vh 1vw;
+    margin: 1vh 1vw;
+    width: 15%;
+    justify-content: center;
+    text-align: center;
+    bottom: 8vh;
+}
+
+#soup a{
+    text-decoration: none;
+    font-family: 'KosugiMaru';
+    font-size: bold;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.allRecipe{
+    width: 100%;
+    display: flex;
+}
+
+.allRecipe div{
+	margin-right: 1vw;
+	width: 85%;
+}
+
+.allDishTitle{
+    background-color: #FFFFFF;
+    border: 0;
+    color: #9eb606;
+}
+
+.allDishTitle p{
+    font-family: 'KosugiMaru';
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+
+.allDishTitle a{
+    text-decoration: none;
+    font-family: 'KosugiMaru';
+    font-size: bold;
+    letter-spacing: 0.01em;
+    color: #9eb606;
+}
+
+.allDishTitle a:hover{
+    text-decoration: underline;
+}
+
+.allDishMaterial{
+    font-family: 'KosugiMaru';
+    font-size: small;
+    font-weight: lighter;
+    letter-spacing: 0.01em;
+    color: #696969;
+    margin: 1vh 1vh;
+}
+
+.allDishDescription{
+    font-family: 'KosugiMaru';
+    font-size: small;
+    font-weight: lighter;
+    letter-spacing: 0.01em;
+    color: #000000;
+    padding: 1vh 1vw;
+    border-radius: 8px;
+    background-color: #fafaf5;
+    margin-right: 1vh;
+}
+
+.allDishName{
+    font-family: 'KosugiMaru';
+    font-size: small;
+    font-weight: lighter;
+    letter-spacing: 0.01em;
+    margin: 1vh 1vh;
+}
+
+.heartButton{
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.heart{
+    width: 2w;
+    height: 2vh;
+    margin: 1vh;
+    justify-content: flex-end;
+}
+
+.recipePhoto{
+    margin: auto 1vw;
+    display: block;
+    width: 15%;
+    height: 15vh;
+    border-radius: 8px;
+}
+
+/* フッター用設定 */
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5vh 0;
+    padding: 1px solid #FFFFFF;
+}
+
+/* レシピ画面 */
+#recipeTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0;
+}
+
+#recipeTitle h3{
+    font-family: 'KosugiMaru';
+    font-weight: bolder;
+    letter-spacing: 0.01em;
+    margin: 2vh 0;
+    color: #8da306;
+}
+
+#allDescription{
+    display: flex;
+    margin: 2vh 2vw;
+}
+
+#allDescription img{
+    width: 30%;
+    height: 30%;
+    border-radius: 8px;
+    margin-right: 2vw;
+}
+
+#descriptionContent{
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 1vh 1vw;
+}
+
+#name{
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    color: #6a6a6a;
+    font-size: 0.8rem;
+    margin: 1vh 1vw;
+}
+
+#allDescription h5{
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 1vh 1vw;
+}
+
+#material{
+    display: flex;
+}
+
+#materialName{
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 1vh 0;
+}
+
+#materialDetails{
+    list-style: none;
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 1vh 0;
+}
+
+#point{
+    width: 50%;
+}
+
+#point h5 {
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    font-size: bold;
+    color: #000000;
+    margin: 1vh 1vw;
+}
+
+#point p{
+    font-weight: lighter;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 1vh 1vw;
+}
+
+#why{
+    width: 50%;
+}
+
+#why h5{
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    font-size: bold;
+    color: #000000;
+    margin: 1vh 1vw;
+}
+
+#why p{
+    font-weight: lighter;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 1vh 1vw;
+}
+
+.cuisineDescriptionHeart{
+    width: 2vw;
+    height: 2vh;
+    margin: 0 1vw;
+}
+
+.wayOfMaking{
+    display: flex;
+    width: 100%;
+}
+
+.someWayOfMaking{
+    width: 25%;
+    padding: 0.5vh 0.5vw;
+    text-align: center;
+}
+
+.someWayOfMakingName{
+    font-family: 'KosugiMaru';
+    background-color: #fafaf5;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* 設定画面用 */
+#setting{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5vh 0;
+}
+
+#setting img{
+    padding: 0 0.5vw 0 0.5vw;
+}
+
+#setting img:hover{
+    padding: 0 0 0 1vw;
+}
+
+#setting p{
+    margin: 2vh 0;
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+}
+
+#settingContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0;
+    list-style: none;
+    width: 100%;
+}
+
+#settingName{
+    width: 50%;
+}
+
+#settingName li{
+    display: flex;
+    justify-content: center;
+}
+
+#settingForm{
+    width: 50%;
+}
+
+#unsubscribeButton{
+    font-family: 'KosugiMaru';
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding: 0.5vh 0.5vw;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+#unsubscribeButton:hover{
+    background-color: #d3d3d3;
+}
+
+/* 家族追加用設定 */
+#family{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0;
+    list-style: none;
+    width: 100%;
+}
+
+#family img{
+    padding: 0 0.5vw 0 0.5vw;
+}
+
+#family img:hover{
+    padding: 0 0 0 1vw;
+}
+
+#addFamily{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0;
+    list-style: none;
+    width: 100%;
+}
+
+#addFamily input{
+    font-family: 'KosugiMaru';
+    font-size: small;
+    letter-spacing: 0.01em;
+    height: 4vh;
+    width: 13vw;
+    border: 1px solid #b9b9b9;
+    border-radius: 8px;
+    margin: 0 3vh;
+}
+
+#addFamily button{
+    font-family: 'KosugiMaru';
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding: 0.5vh 0.5vw;
+    border-radius: 8px;
+    background-color: #f7931d;
+    color: #FFFFFF;
+}
+
+#yourId{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    font-size: small;
+    margin: 1vh 0;
+}
+
+/* レシピ投稿ページ */
+#cookingProcedureNumber{
+    display: flex;
+    width: 2vw;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #aeaeae;
+    align-items: center;
+    justify-content: center;
+}
+
+#writeRecipeName {
+    width: 100%; 
+}
+
+#material, .cookingProcedure, #cookingPointAndWhy, #pushCooking {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+    margin-bottom: 20px; 
+}
+
+.materialName, .materialContent {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.addContent {
+    cursor: pointer;
+    background-color: #f7931d;
+    color: #FFFFFF;
+    border-radius: 8px;
+    margin: 1vh 15vw 3vh 15vw;
+}
+
+#pushCooking button {
+    background-color: #f7931d; 
+    color: white;
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+#pushCooking button:hover {
+    background-color: #e6821a;
+}
+
+.cookingTitle{
+    font-family: 'KosugiMaru';
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 1vh 1vw;
+}
+
+#writerecipeTitle{
+        text-align: center; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        margin: 1vh 0;
+}
+
+/* ログインと新規登録用設定 */
+#loginMain , #registerMain{
+    justify-content: center;
+    width: 100%;
+    margin: 10vh 0 0 0;
+}
+
+#loginForm , #registerForm{
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 40%;
+    height: 100%;
+}
+
+#loginForm img , #registerForm img{
+    width: 23%;
+    height: 40%;
+    margin: 5vh 0;
+}
+
+#loginForm form , #registerForm form{
+    display: block;
+}
+
+#loginForm a , #registerForm a{
+    font-family: 'KosugiMaru';
+    text-decoration: none;
+    color: #e6821a;
+    letter-spacing: 0.05em;
+    
+}
+
+#loginForm a:hover , #registerForm a:hover{
+    text-decoration: underline;
+}
+
+#loginForm button , #registerForm button{
+    font-family: 'KosugiMaru';
+    font-size: bold;
+    font-weight: bold;
+    border: none;
+    padding: 0.8vh 1.5vw;
+    border-radius: 8px;
+    background-color: #f7931d;
+    color: #FFFFFF;
+    margin: 4vh auto;
+}
+
+#loginText, #loginPasswd , #registerText , #registerPasswd{
+    text-align: center;
+    font-family: 'KosugiMaru';
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    border-radius: 8px;
+    border: 1px solid #b9b9b9;
+    width: 20vw;
+    height: 4vh;
+    margin: 0 0 2vh 0;
+}
+
+
+/* 共通設定 */
+body{
+    background-color: #fafaf5;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #FFFFFF;
+}
+
+h1{
+    font-family: 'MPLUS1Code-Bold';
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+p{
+    margin: 0;
+}
+
+/* 共有便利設定 */
+.grid{
+    display: grid;
+    place-items: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.custom-line{
+    border-bottom: 1px solid #b9b9b9;
+}
+
+.img{
+    margin: 10px 10px 10px 0;
+    width: 8vh;
+    height: 8vh;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    margin: 0 8px;
+}
+
+.bold{
+    font-size: large;
+    font-weight: bold;
+}
+
+/* レシピ投稿ページ */
+#cookingProcedureNumber{
+    display: flex;
+    width: 2vw;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #aeaeae;
+    align-items: center;
+    justify-content: center;
+}
+
+#writeRecipeName {
+    width: 100%; 
+}
+
+#material, .cookingProcedure, #cookingPointAndWhy, #pushCooking {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+    margin-bottom: 20px; 
+}
+
+.materialName, .materialContent {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.addContent {
+    cursor: pointer;
+    background-color: #f7931d;
+    color: #FFFFFF;
+    border-radius: 8px;
+    margin: 1vh 15vw 3vh 15vw;
+}
+
+#pushCooking button {
+    background-color: #f7931d; 
+    color: white;
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+#pushCooking button:hover {
+    background-color: #e6821a;
+}
+
+.cookingTitle{
+    font-family: 'KosugiMaru';
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 1vh 1vw;
+}
+
+#writerecipeTitle{
+        text-align: center; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        margin: 1vh 0;
+}
+
+/* ログインと新規登録用設定 */
+#loginMain , #registerMain{
+    justify-content: center;
+    width: 100%;
+    margin: 10vh 0 0 0;
+}
+
+#loginForm , #registerForm{
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 40%;
+    height: 100%;
+}
+
+#loginForm img , #registerForm img{
+    width: 23%;
+    height: 40%;
+    margin: 5vh 0;
+}
+
+#loginForm form , #registerForm form{
+    display: block;
+}
+
+#loginForm a , #registerForm a{
+    font-family: 'KosugiMaru';
+    text-decoration: none;
+    color: #e6821a;
+    letter-spacing: 0.05em;
+    
+}
+
+#loginForm a:hover , #registerForm a:hover{
+    text-decoration: underline;
+}
+
+#loginForm button , #registerForm button{
+    font-family: 'KosugiMaru';
+    font-size: bold;
+    font-weight: bold;
+    border: none;
+    padding: 0.8vh 1.5vw;
+    border-radius: 8px;
+    background-color: #f7931d;
+    color: #FFFFFF;
+    margin: 4vh auto;
+}
+
+#loginText, #loginPasswd , #registerText , #registerPasswd{
+    text-align: center;
+    font-family: 'KosugiMaru';
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    border-radius: 8px;
+    border: 1px solid #b9b9b9;
+    width: 20vw;
+    height: 4vh;
+    margin: 0 0 2vh 0;
+}
+
+
+/* 共通設定 */
+body{
+    background-color: #fafaf5;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #FFFFFF;
+}
+
+h1{
+    font-family: 'MPLUS1Code-Bold';
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+p{
+    margin: 0;
+}
+
+/* 共有便利設定 */
+.grid{
+    display: grid;
+    place-items: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.custom-line{
+    border-bottom: 1px solid #b9b9b9;
+}
+
+.img{
+    margin: 10px 10px 10px 0;
+    width: 8vh;
+    height: 8vh;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    margin: 0 8px;
+}
+
+.bold{
+    font-size: large;
+    font-weight: bold;
+}
+
+/* レシピ投稿サイトページ用 */
+#writeRecipeMainData {
+    width: 90vw;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #b9b9b9;
+    background-color: #FFFFFF;
+}
+
+#writeRecipeMainDataTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 1vh 1vw;
+    border-bottom: 1px solid #b9b9b9;
+    padding-bottom: 0.5vh;
+}
+
+#writeRecipeMainDataTop h3 {
+    font-family: 'KosugiMaru';
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 0;
+    padding-left: 1vw;
+}
+
+#writeRecipeMainDataTop p{
+    font-family: 'KosugiMaru';
+    font-weight: lighter;
+    letter-spacing: 0.01em;
+    color: #000000;
+    font-size: small;
+    margin: 0;
+    padding-right: 1vw;
+}
+
+#writeRecipeTitle{
+    display: flex;
+    align-items: flex-end;
+}
+
+#writeRecipeTitle h5{
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 1vh 1vw;
+    padding-left: 1vw;
+}
+
+#writeRecipeTitle p{
+    font-family: 'KosugiMaru';
+    font-weight: lighter;
+    letter-spacing: 0.01em;
+    color: #2c2c2c;
+    font-size: 0.7rem;
+    margin: 1vh 1vw;
+}
+
+#writeRecipeTitleForm{
+    border: 1px solid #bdbdbd;
+    text-align: left;
+    border-radius: 8px;
+    width: 95%;
+    padding: 1vh 0 1vh 2vw;
+    font-size: 2rem;
+    margin: 1vh 0;
+}
+
+#writeRecipeDescriptionTopTitle{
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    color: #000000;
+    display: flex;
+    align-items: flex-end;
+    width: 95%;
+    margin: 1vh 2.5% 0 2.5%;
+}
+
+#writeRecipeImageInputForm {
+    text-align: center;
+    border-radius: 8px;
+    width: 95%;
+    margin: 1vh auto;
+    display: flex;
+    
+}
+
+#writeRecipeImageForm{
+    width: 40%;
+    height: 30vw;
+}
+
+#outputTitleImage{
+    width: 40%;
+    height: 30vw;
+    margin: 0 1vh 2vh 0;
+    border-width: 1px;
+    border-color: #fff;
+    display: none;
+    border-radius: 8px;
+}
+
+#writeRecipeDescriptionForm{
+    height: 30vw;
+    width: 60%;
+}
+
+#writeRecipeDescriptionMaterial{
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    width: 100%;
+    height: 40%;
+    margin-top: 1vh;
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    font-weight: bold;
+    padding: 1vh;
+    resize: none;
+}
+
+#writeRecipeDescriptionTitle{
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    width: 100%;
+    height: 30%;
+    margin: 1vh 0;
+    letter-spacing: 0.01em;
+    font-weight: bold;
+    font-family: 'KosugiMaru';
+    padding: 1vh;
+    resize: none;
+}
+
+#writeRecipeDescriptionForm p{
+    display: flex;
+    align-items: right;
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    color: #2c2c2c;
+    margin: 1vh 0;
+}
+
+#imageForm{
+    margin: 0 1vh 0 0;
+    border-radius: 8px;
+    border: 1px solid #bdbdbd;
+    width: 95%;
+    height: 30vw;
+}
+
+#imageForm img{
+    margin: 30% auto 0 auto;
+    width: 10vw;
+    height: 10vh;
+}
+
+#imageForm p{
+    font-family: 'KosugiMaru';
+    font-weight: lighter;
+    letter-spacing: 0.01em;
+    color: #4d4d4d;
+    font-size: 0.7rem;
+    margin-bottom: 1vh;
+}
+
+#imageForm input{
+    margin: 0 auto;
+}
+
+#writeRecipeImageDescriptionTitle{
+    width: auto;
+    margin: 3vh 1vw 0 1vw;
+    padding-top: 2vh;
+    display: flex;
+    align-items: flex-end;
+    border-top: 1px solid #b9b9b9;
+}
+
+#writeRecipeImageDescriptionTitle h5{
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 1vh 1vw 1vh 0;
+    padding-left: 1vw;
+}
+
+#writeRecipeImageDescriptionTitle p{
+    font-family: 'KosugiMaru';
+    font-weight: lighter;
+    letter-spacing: 0.01em;
+    color: #2c2c2c;
+    font-size: 0.7rem;
+    margin: 1vh 1vw;
+}
+
+/* input/fileの非表示 */
+/* input[type="file"] {
+    display: none;
+} */
+
+#writeRecipeSubmitButton{
+    font-family: 'KosugiMaru';
+    font-size: bold;
+    font-weight: bold;
+    border: none;
+    padding: 0.8vh 1.5vw;
+    border-radius: 8px;
+    background-color: #f7931d;
+    color: #FFFFFF;
+    margin: 4vh auto;
+}
+
+.writeRecipeImageDescriptionBlok{
+    display: flex;
+    align-items: center;
+}
+
+.writeRecipeImageDescriptionBlok p{
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #aeaeae;
+    padding: 1vh 1vw;
+    margin: auto
+}
+
+.writeRecipeImageDescriptionBlok textarea{
+    border-radius: 8px;
+    width: 55%;
+    height: 10vw;
+    margin: 1vh auto;
+    font-family: 'KosugiMaru';
+    padding: 1vh;
+    resize: none;
+}
+
+#writeRecipeComment{
+    border-top: 1px solid #bdbdbd;
+    display: flex;
+    width: 95%;
+    margin: 2vh auto;
+}
+
+#point h5 , #why h5{
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 1vh 1vw 1vh 0;
+}
+
+#point textarea , #why textarea{
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: auto;
+    padding: 1vh;
+    height: 10vw;
+    width: 90%;
+    resize: none;
+}
+
+
+.inputRecipeDescriptionImage{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    margin: 2vh 0 1vh 0;
+}
+
+.inputRecipeDescriptionImage p{
+    display: flex;
+    align-items: center;
+    font-family: 'KosugiMaru';
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: #f7931d;
+    color: #FFFFFF;
+    padding: 1vh 1vw;
+    margin: 0 1vh 0 3vh;
+    width: 4%;
+    justify-content: center;
+}
+
+.inputRecipeDescriptionImage img{
+    border-radius: 8px;
+    height: 20vh;
+    width: 15%;
+    margin: auto 0 auto 2vh;
+}
+
+.inputRecipeDescriptionImage textarea{
+    font-family: 'KosugiMaru';
+    letter-spacing: 0.01em;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 1vh;
+    height: 100%;
+    width: 75%;
+    border: 1px solid #bdbdbd;
+    margin: 0 2vw 0 2vw;
+    resize: none;
+}
+
+#userLog{
+    width: 100%;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #bdbdbd;
+}
+
+.myRecipeOperationButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5vh 0.5vh 1vh 0.5vh;
+}
+
+.myRecipeOperationButton form button{
+    font-family: 'KosugiMaru';
+    font-size: small;
+    border: none;
+    padding: 0.3vh 0.8vw;
+    border-radius: 8px;
+    background-color: #f7361d;
+    color: #FFFFFF;
+}
+
+.logAllRecipe {
+    width: 100%;
+    display: flex;
+}
+
+.logAllRecipe div{
+    margin-right: 1vw;
+    width: 90%;
+}
+
+.logRecipePhoto {
+    margin: auto 1vw;
+    display: block;
+    width: 10%;
+    height: 15vh;
+    border-radius: 8px;
+}
