@@ -1,2 +1,3 @@
-# EmploymentPresentationWorks_KitchX
-# EmploymentPresentationWorks_KitchX
+# EmploymentPresentationWorks_KitchX(tomcat)
+###就職プレゼン用に作成したWebアプリ(レシピサイト)です。
+
